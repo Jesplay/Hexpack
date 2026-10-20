@@ -1,6 +1,6 @@
 [package]
 name = "hexpack"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Draw, check and compactly arrange Hex Casting patterns"
 license = "MIT"

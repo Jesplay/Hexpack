@@ -1,0 +1,221 @@
+---
+tags: [hexcasting/mod]
+version: "2.0.0"
+---
+
+# Hexical
+
+> A fun addon containing genie lamps, mage blocks, specks, world scrying, and more!
+
+🌐 [Official online docs](https://hexical.hexxy.media/v/2.0.0/1.0.0/en_us/)
+
+**50** book entries · **74** patterns · **69** spells · **4** great spells
+
+## Book entries
+
+- [[Akashic Utilities]] — Patterns
+- [[Animated Scrolls]] — Items
+- [[Archgenie Lamps]] — Genie Lamp
+- [[Autographs]] — Spells
+- [[Block Mimicry]] — Spells
+- [[Casting Carpets]] — Items
+- [[Charm (Book Entry)]] — Great Spells
+- [[Circle Spells]] — Spells
+- [[Conjurable Delights]] — Spells
+- [[Conjure Spike (Book Entry)]] — Spells
+- [[Curios]] — Items
+- [[Dyes]] — Spells
+- [[Evocation]] — Spells
+- [[Greater Blink (Book Entry)]] — Great Spells
+- [[Grimoires]] — Items
+- [[Grok]] — Patterns
+- [[Hand Lamps]] — Genie Lamp
+- [[Hex Candles]] — Items
+- [[Hexical Changes]] — Getting Started
+- [[Hexical Spells]] — Spells
+- [[Hopper (Book Entry)]] — Spells
+- [[Horrible (Book Entry)]] — Spells
+- [[Hotbar]] — Spells
+- [[Item Renaming]] — Spells
+- [[Lei]] — Items
+- [[Lesser Sentinels]] — Spells
+- [[Mage Blocks]] — Spells
+- [[Magic Missile (Book Entry)]] — Spells
+- [[Media Jar]] — Items
+- [[Media Logs]] — Items
+- [[Meshes]] — Great Spells
+- [[On Genies]] — Genie Lamp
+- [[Pattern Manipulation]] — Patterns
+- [[Pedestals]] — Items
+- [[Pedestals in Circles]] — The Great Work
+- [[Periwinkle]] — Items
+- [[Pigment Manipulation]] — Spells
+- [[Plushies]] — Items
+- [[Potions of Wooleyeing]] — Items
+- [[Prestidigitation (Book Entry)]] — Spells
+- [[Projectiles]] — Spells
+- [[Pyrotechnics]] — Spells
+- [[Rotation]] — Spells
+- [[Scarab Beetle]] — Items
+- [[Sentinel Beds]] — Items
+- [[Shaders]] — Spells
+- [[Specialized Breaking]] — Spells
+- [[Specks]] — Spells
+- [[Telepathy]] — Patterns
+- [[Wristpocket (Book Entry)]] — Spells
+
+## Great Spells
+
+- [[Charm]] `entity, list, num, list of num, list of num → —`
+- [[Greater Blink]] `vector → —`
+- [[Conjure Mesh]] `vector → entity`
+- [[Promote Lamp]] `entity → —`
+
+## Spells
+
+- [[Conjure Mage Block]] `vector → —`
+- [[Reset Mage Block]] `vector → —`
+- [[Modify Block Bouncy]] `vector → —`
+- [[Modify Block Energized]] `vector, number → —`
+- [[Modify Block Ephemeral]] `vector, number → —`
+- [[Modify Block Volatile]] `vector → —`
+- [[Rotate Block]] `vector, vector → —`
+- [[Rotate Entity]] `entity, number, number → —`
+- [[Autograph]] `— → —`
+- [[Unautograph]] `— → —`
+- [[Dye]] `vector/entity, dye → —`
+- [[Magic Missile]] `vector, vector → —`
+- [[Prestidigitation]] `entity/vector → —`
+- [[Wristpocket]] `— → —`
+- [[Sleight]] `item entity/vector → —`
+- [[Mage Hand]] `entity/vector → —`
+- [[Mage Mouth]] `— → —`
+- [[Conjure Speck]] `any, vector, vector → entity`
+- [[Confetti]] `vector, number/vector → —`
+- [[Vibrate]] `vector, entity/vector, number → —`
+- [[Sparkle]] `vector, vector, number → —`
+- [[Crack Device]] `— → —`
+- [[Conjure Flower]] `vector, identifer → —`
+- [[Illuminate]] `vector, number → —`
+- [[Gasp]] `entity → —`
+- [[Squawk]] `vector, identifier → —`
+- [[Conjure Egg]] `vector → entity`
+- [[Conjure Spit]] `vector → entity`
+- [[Conjure Snowball]] `vector → entity`
+- [[Conjure Fireball]] `vector → entity`
+- [[Extract Block]] `vector, number → —`
+- [[Collect Block]] `vector → —`
+- [[Hex Gummy]] `vector → —`
+- [[Conjure Hexburst]] `vector, any → —`
+- [[Conjure Hextito]] `vector, list of patterns → —`
+- [[Conjure Spike]] `vector, vector, number → —`
+- [[Push]] `vector, vector → —`
+- [[Dispense]] `item entity, vector, vector → —`
+- [[Cook]] `item entity → —`
+- [[Roast]] `item entity → —`
+- [[Smoke]] `item entity → —`
+- [[Blast]] `item entity → —`
+- [[Cut Stone]] `item entity, identifier → —`
+- [[Displace]] `entity, vector → —`
+- [[Appendage]] `vector → —`
+- [[Export Media]] `vector, number → —`
+- [[Inculcate]] `list of patterns → —`
+- [[Deploy Sentinels]] `list of vectors → —`
+- [[Simulate Firework]] `vector, vector, number → —`
+- [[Conjure Firework]] `vec, vec, num, num, list of vec, list of vec, bool, bool → —`
+- [[Name Item]] `entity, text/null → —`
+- [[Describe Item]] `entity, list of text/null → —`
+- [[Horrible]] `vector → entity`
+- [[Charmed Gambit II]] `any → —`
+- [[Discharm]] `entity → —`
+- [[Wish]] `list of patterns → —`
+- [[Genie Gambit]] `any → —`
+- [[Refuel Lamp]] `number → —`
+- [[Write Grimoire]] `pattern, list → —`
+- [[Erase Grimoire]] `pattern → —`
+- [[Restore Scroll]] `entity → —`
+- [[Age Scroll]] `entity → —`
+- [[Vanish Scroll]] `entity → —`
+- [[Dye Ink]] `entity, vector → —`
+- [[Illuminate Ink]] `entity → —`
+- [[Induce Digging]] `entity → —`
+- [[Grok Gambit]] `list, list → —`
+- [[Librarian's Gambit]] `vector, pattern, any → —`
+- [[Librarian's Gambit II]] `vector → —`
+
+## Patterns
+
+- [[Authenticator's Distillation]] `item stack, entity → boolean`
+- [[Chromatic Purification]] `id/vector/entity → dye/null`
+- [[Vision Purification]] `dye → vector`
+- [[Pigment Purification]] `dye/entity → pigment`
+- [[Pigment Exaltation]] `pigment, vec, num → vec`
+- [[Internalize Pigment II]] `pigment → —`
+- [[Wristpocket Reflection]] `— → item`
+- [[Move Speck]] `speck entity, vector → —`
+- [[Rotate Speck]] `speck entity, vector → —`
+- [[Roll Speck]] `speck entity, number → —`
+- [[Alter Speck]] `speck entity, any → —`
+- [[Time Speck]] `speck entity, number → —`
+- [[Resize Speck]] `speck entity, number → —`
+- [[Thicken Speck]] `speck entity, number → —`
+- [[Paint Speck]] `speck entity, pigment → —`
+- [[Dismiss Speck]] `speck entity → —`
+- [[Zone Distillation Speck]] `vector, number → list of entities`
+- [[Evocation Reflection]] `— → list of patterns`
+- [[Evoker Reflection]] `— → number`
+- [[Hopper]] `source, num?, dest., num? → —`
+- [[Hopper Purification]] `source → list`
+- [[Handy Reflection]] `— → number`
+- [[Switch]] `number → —`
+- [[Infiltration Reflection]] `— → list of vectors`
+- [[Clear Vision]] `— → —`
+- [[Pierce Darkness]] `— → —`
+- [[Visualize Forms]] `— → —`
+- [[Broadcast Vision]] `— → —`
+- [[Identify Importance]] `— → —`
+- [[Split Vision]] `— → —`
+- [[Charmed Gambit]] `any → —`
+- [[Charmed Reflection]] `— → any`
+- [[Charmed Reflection II]] `— → any`
+- [[Weave Mesh]] `entity, list of vectors → —`
+- [[Tangle Purification]] `entity → list of vectors`
+- [[Genie Reflection Spatial]] `— → vector`
+- [[Genie Reflection Rotational]] `— → vector`
+- [[Genie Reflection Kinetic]] `— → vector`
+- [[Genie Reflection Temporal]] `— → number`
+- [[Genie Reflection Media]] `— → number`
+- [[Genie Reflection Memory]] `— → any`
+- [[Finale Reflection]] `— → boolean`
+- [[Archgenie Purification]] `entity → boolean`
+- [[Archgenie Reflection Spatial]] `— → vector`
+- [[Archgenie Reflection Rotational]] `— → vector`
+- [[Archgenie Reflection Kinetic]] `— → vector`
+- [[Archgenie Reflection Temporal]] `— → number`
+- [[Archgenie Reflection Media]] `— → number`
+- [[Archgenie Gambit]] `any → —`
+- [[Archgenie Reflection Memory]] `— → any`
+- [[Archivist Reflection]] `— → list of patterns`
+- [[Glyphmaker's Distillation]] `pattern, number → pattern`
+- [[Congruence Distillation]] `pattern, pattern → boolean`
+- [[Similarity Distillation]] `pattern, pattern → boolean`
+- [[Chirographer's Purification]] `pattern → list of numbers`
+- [[Calligrapher's Purification]] `list of numbers → pattern`
+- [[Handwriting Distillation]] `pattern → list of vectors`
+- [[Grok Reflection]] `— → list, list`
+- [[Telepathic Reflection]] `— → number`
+- [[Send Thought]] `any → —`
+- [[Shout Thought]] `any → —`
+- [[Hallucinate Pling]] `— → —`
+- [[Hallucinate Click]] `— → —`
+- [[Offensive Reflection]] `— → number`
+- [[Manipulative Reflection]] `— → number`
+- [[Charge Reflection]] `— → number`
+- [[Retreat Reflection]] `— → number`
+- [[Dodge Reflection]] `— → number`
+- [[Evade Reflection]] `— → number`
+- [[Leaping Reflection]] `— → number`
+- [[Stealthy Reflection]] `— → number`
+- [[Rolling Reflection]] `— → number`
+- [[Librarian's Purification]] `vector → pattern/null`
+- [[Librarian's Purification II]] `vector → any`

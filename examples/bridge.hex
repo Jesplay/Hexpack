@@ -1,0 +1,23 @@
+# Bridge: places 10 blocks in the direction you look, level with the block below you
+
+Mind's Reflection
+Compass' Purification II        # feet position
+Floor Purification
+Vector Reflection -Y
+Additive Distillation           # B = block below me
+Mind's Reflection
+Alidade's Purification
+Axial Purification              # dir = look direction, snapped to an axis
+num: 1
+num: 10
+Gemini Gambit                   # ten 1s
+num: 10
+Flock's Gambit                  # [1, 1, ..., 1]
+Running Sum Purification        # [1, 2, ..., 10]
+Introspection
+  Multiplicative Distillation   # dir * i
+  Additive Distillation         # B + dir * i
+  Place Block
+Retrospection
+Jester's Gambit
+Thoth's Gambit

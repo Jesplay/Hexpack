@@ -1,0 +1,18 @@
+/* Hexwoven vault: animated pattern drawings.
+   The full pattern is always drawn faintly; a bright line traces the strokes from the pink start. */
+.hexpat .hexpat-trace {
+  stroke-dasharray: var(--len);
+  stroke-dashoffset: 0;
+  animation: hexpat-draw var(--dur, 3s) ease-in-out infinite;
+}
+@keyframes hexpat-draw {
+  0%   { stroke-dashoffset: var(--len); }
+  70%  { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 0; }
+}
+/* small drawings (book pages, indexes) only animate on hover */
+.hexpat.small .hexpat-trace { animation: none; }
+.hexpat.small:hover .hexpat-trace { animation: hexpat-draw var(--dur, 2.4s) ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .hexpat .hexpat-trace, .hexpat.small:hover .hexpat-trace { animation: none !important; }
+}

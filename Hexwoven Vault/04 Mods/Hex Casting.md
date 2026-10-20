@@ -1,0 +1,302 @@
+---
+tags: [hexcasting/mod]
+version: "0.11.4"
+---
+
+# Hex Casting
+
+> Cast powerful Hexes on the fly by drawing patterns with a staff.
+
+🧩 [Modrinth page](https://modrinth.com/mod/nTW3yKrm) · 🌐 [Official online docs](https://hexcasting.hexxy.media/v/0.11.4/1.0/en_us/)
+
+**83** book entries · **146** patterns · **35** spells · **14** great spells
+
+## Book entries
+
+- [[A Frustration]] — Getting Started
+- [[A Primer On Vectors]] — Hex Casting
+- [[Abacus]] — Items
+- [[Advanced Escaping]] — Patterns
+- [[Advanced Mathematics]] — Patterns
+- [[Akashic Libraries]] — The Great Work
+- [[Akashic Patterns]] — Patterns
+- [[Altiora (Book Entry)]] — Great Spells
+- [[Amethyst]] — Items
+- [[Ancient Cyphers]] — Items
+- [[Basic Patterns]] — Patterns
+- [[Basic Spells]] — Spells
+- [[Block Manipulation]] — Spells
+- [[Cardamom Steles, 1]] — Lore
+- [[Cardamom Steles, 2]] — Lore
+- [[Cardamom Steles, 3]] — Lore
+- [[Cardamom Steles, 4]] — Lore
+- [[Cardamom Steles, 5]] — Lore
+- [[Caster's Glamour (Book Entry)]] — Spells
+- [[Casting Items]] — Items
+- [[Constants]] — Patterns
+- [[Craft Phial (Book Entry)]] — Great Spells
+- [[Crafting Casting Items]] — Spells
+- [[Create Lava (Book Entry)]] — Great Spells
+- [[Creative-Only Items]] — Items
+- [[Cross-Mod Interations]] — Cross-Mod Compatibility
+- [[Decorative Blocks]] — Items
+- [[Directrices]] — The Great Work
+- [[Edified Trees]] — Items
+- [[Enlightened Mishaps]] — Hex Casting
+- [[Entities]] — Patterns
+- [[Escaping Patterns]] — Patterns
+- [[Fanciful Staves]] — The Great Work
+- [[Flay Mind (Book Entry)]] — Great Spells
+- [[Flight]] — Spells
+- [[Focus]] — Items
+- [[Geodes]] — Getting Started
+- [[Greater Teleport (Book Entry)]] — Great Spells
+- [[Hex Casting 101]] — Hex Casting
+- [[Hex Potions]] — Items
+- [[How to Read This Section]] — Patterns
+- [[Impeti]] — The Great Work
+- [[Internalize Pigment (Book Entry)]] — Spells
+- [[Jeweler's Hammer]] — Items
+- [[List Manipulation]] — Patterns
+- [[Logical Operators]] — Patterns
+- [[Mathematics]] — Patterns
+- [[Media]] — Getting Started
+- [[Meta-Evaluation]] — Patterns
+- [[Mishaps]] — Hex Casting
+- [[Nadirs]] — Spells
+- [[Naming Actions]] — Hex Casting
+- [[Number Literals]] — Patterns
+- [[On The Flaying of Minds]] — The Great Work
+- [[Pehkui]] — Cross-Mod Compatibility
+- [[Phials of Media]] — Items
+- [[Pigments]] — Items
+- [[Quenching Allays]] — The Great Work
+- [[Reading and Writing]] — Patterns
+- [[Restoration Log 72]] — Lore
+- [[Scrolls]] — Items
+- [[Scrying Lens]] — Items
+- [[Sentinels]] — Spells
+- [[Sets]] — Patterns
+- [[Slates]] — Items
+- [[Spell Circle Patterns]] — Patterns
+- [[Spell Circles]] — The Great Work
+- [[Spellbook]] — Items
+- [[Stack Manipulation]] — Patterns
+- [[Staves]] — Items
+- [[Summon Greater Sentinel (Book Entry)]] — Great Spells
+- [[The Stack]] — Hex Casting
+- [[The Work]] — The Great Work
+- [[Thought-Knot]] — Items
+- [[Types]] — Patterns
+- [[Undocumented Hex Casting Patterns]] — Not in the Book
+- [[WHAT DID I SEE]] — Getting Started
+- [[Weather Manipulation]] — Great Spells
+- [[What is a Hex]] — Hex Casting
+- [[Wooleye Instance Notes]] — Lore
+- [[Wooleye Interview Logs]] — Lore
+- [[Working with Items]] — Spells
+- [[Zeniths]] — Great Spells
+
+## Great Spells
+
+- [[Create Lava]] `vector → —`
+- [[Summon Lightning]] `vector → —`
+- [[Summon Rain]] `— → —`
+- [[Dispel Rain]] `— → —`
+- [[Altiora]] `player → —`
+- [[Greater Teleport]] `entity, vector → —`
+- [[White Sun's Zenith]] `entity, number, number → —`
+- [[Blue Sun's Zenith]] `entity, number → —`
+- [[Black Sun's Zenith]] `entity, number, number → —`
+- [[Red Sun's Zenith]] `entity, number, number → —`
+- [[Green Sun's Zenith]] `entity, number, number → —`
+- [[Summon Greater Sentinel]] `vector → —`
+- [[Craft Phial]] `entity → —`
+- [[Flay Mind]] `entity, vector → —`
+
+## Spells
+
+- [[Explosion]] `vector, number → —`
+- [[Fireball]] `vector, number → —`
+- [[Impulse]] `entity, vector → —`
+- [[Blink]] `entity, number → —`
+- [[Make Note]] `vector, number, number → —`
+- [[Place Block]] `vector → —`
+- [[Break Block]] `vector → —`
+- [[Create Water]] `vector → —`
+- [[Destroy Liquid]] `vector → —`
+- [[Conjure Block]] `vector → —`
+- [[Conjure Light]] `vector → —`
+- [[Overgrow]] `vector → —`
+- [[Edify Sapling]] `vector → —`
+- [[Ignite]] `entity | vector → —`
+- [[Extinguish Area]] `vector → —`
+- [[White Sun's Nadir]] `entity, number, number → —`
+- [[Blue Sun's Nadir]] `entity, number → —`
+- [[Black Sun's Nadir]] `entity, number, number → —`
+- [[Red Sun's Nadir]] `entity, number, number → —`
+- [[Green Sun's Nadir]] `entity, number, number → —`
+- [[Craft Cypher]] `entity, list → —`
+- [[Craft Trinket]] `entity, list → —`
+- [[Craft Artifact]] `entity, list → —`
+- [[Recharge Item]] `entity → —`
+- [[Erase Item]] `— → —`
+- [[Summon Sentinel]] `vector → —`
+- [[Banish Sentinel]] `— → —`
+- [[Internalize Pigment]] `— → —`
+- [[Caster's Glamour]] `— → —`
+- [[Anchorite's Flight]] `entity, number → —`
+- [[Wayfarer's Flight]] `entity, number → —`
+- [[Alter Scale]] `entity, num → —`
+- [[Chronicler's Gambit]] `entity, any → —`
+- [[Scribe's Gambit]] `any → —`
+- [[Akasha's Gambit]] `vector, pattern, any → —`
+
+## Patterns
+
+- [[Locate Sentinel]] `— → vector`
+- [[Wayfind Sentinel]] `vector → vector`
+- [[Aviator's Purification]] `entity → boolean`
+- [[Additive Distillation]] `num|vec, num|vec → num|vec`
+- [[Subtractive Distillation]] `num|vec, num|vec → num|vec`
+- [[Multiplicative Distillation]] `num|vec, num|vec → num|vec`
+- [[Division Distillation]] `num|vec, num|vec → num|vec`
+- [[Length Purification]] `num|vec → number`
+- [[Power Distillation]] `num|vec, num|vec → num|vec`
+- [[Conjunction Distillation]] `bool, bool → bool`
+- [[Disjunction Distillation]] `bool, bool → bool`
+- [[Negation Purification]] `bool → bool`
+- [[Exclusion Distillation]] `bool, bool → bool`
+- [[An Example]] `— → —`
+- [[Gulliver's Purification]] `entity → num`
+- [[Surgeon's Exaltation]] `list, num, any → list`
+- [[Excisor's Distillation]] `list, num → list`
+- [[Selection Distillation]] `list, number → any`
+- [[Flock's Disintegration]] `list → many`
+- [[Derivation Decomposition]] `list → list, any`
+- [[Speaker's Decomposition]] `list → list, any`
+- [[Mind's Reflection]] `— → entity | null`
+- [[Compass' Purification]] `entity → vector`
+- [[Compass' Purification II]] `entity → vector`
+- [[Alidade's Purification]] `entity → vector`
+- [[Archer's Distillation]] `vector, vector → vector | null`
+- [[Architect's Distillation]] `vector, vector → vector | null`
+- [[Scout's Distillation]] `vector, vector → entity | null`
+- [[Reveal]] `any → any`
+- [[Stadiometer's Purification]] `entity → num`
+- [[Pace Purification]] `entity → vector`
+- [[Media Reflection (Hex Casting)]] `— → num`
+- [[Locator's Distillation]] `list, any → num`
+- [[Chronicler's Purification]] `entity → any`
+- [[Auditor's Purification]] `entity → bool`
+- [[Assessor's Purification]] `entity → bool`
+- [[Numerical Reflection]] `— → number`
+- [[Floor Purification]] `num|vec → num|vec`
+- [[Ceiling Purification]] `num|vec → num|vec`
+- [[Vector Exaltation]] `num, num, num → vector`
+- [[Vector Disintegration]] `vector → num, num, num`
+- [[Modulus Distillation]] `num|vec, num|vec → num|vec`
+- [[Axial Purification]] `vec|num → vec|num`
+- [[Entropy Reflection]] `— → num`
+- [[True Reflection]] `— → bool`
+- [[False Reflection]] `— → bool`
+- [[Nullary Reflection]] `— → null`
+- [[Vector Reflection Zero]] `— → vector`
+- [[Vector Rfln. +X-X]] `— → vector`
+- [[Vector Rfln. +Y-Y]] `— → vector`
+- [[Vector Rfln. +Z-Z]] `— → vector`
+- [[Circle's Reflection]] `— → num`
+- [[Arc's Reflection]] `— → num`
+- [[Euler's Reflection]] `— → num`
+- [[Harmony Reflection]] `— → num`
+- [[Selection Exaltation]] `list, num, num → list`
+- [[Retrograde Purification]] `list → list`
+- [[Uniqueness Purification]] `list → list`
+- [[Novice's Gambit]] `any → —`
+- [[Jester's Gambit]] `any, any → any, any`
+- [[Rotation Gambit]] `any, any, any → any, any, any`
+- [[Rotation Gambit II]] `any, any, any → any, any, any`
+- [[Gemini Decomposition]] `any → any, any`
+- [[Prospector's Gambit]] `any, any → any, any, any`
+- [[Undertaker's Gambit]] `any, any → any, any, any`
+- [[Gemini Gambit]] `any, number → many`
+- [[Dioscuri Gambit]] `any, any → any, any, any, any`
+- [[Flock's Reflection]] `— → number`
+- [[Fisherman's Gambit]] `number → any`
+- [[Fisherman's Gambit II]] `number → any`
+- [[Bookkeeper's Gambit]] `many → many`
+- [[Swindler's Gambit]] `many, number → many`
+- [[Maximus Distillation]] `number, number → bool`
+- [[Minimus Distillation]] `number, number → bool`
+- [[Maximus Distillation II]] `number, number → bool`
+- [[Minimus Distillation II]] `number, number → bool`
+- [[Augur's Purification]] `any → bool`
+- [[Augur's Exaltation]] `bool, any, any → any`
+- [[Equality Distillation]] `any, any → bool`
+- [[Inequality Distillation]] `any, any → bool`
+- [[Similarity Distillation (Hex Casting)]] `any, any → bool`
+- [[Dissimilarity Distillation]] `any, any → bool`
+- [[Sorter's Distillation]] `entity, entity → bool`
+- [[Stacking Distillation]] `entity, entity → bool`
+- [[Taxonomer's Distillation]] `entity, entity → bool`
+- [[Surveyor's Distillation]] `vec, vec → bool`
+- [[Inspector's Distillation]] `vec, vec → bool`
+- [[Entity Purification]] `vector → entity or null`
+- [[Entity Purification Animal]] `vector → entity or null`
+- [[Entity Purification Monster]] `vector → entity or null`
+- [[Entity Purification Item]] `vector → entity or null`
+- [[Entity Purification Player]] `vector → entity or null`
+- [[Entity Purification Living]] `vector → entity or null`
+- [[Zone Distillation Animal]] `vector, number → list`
+- [[Zone Distillation Non-Animal]] `vector, number → list`
+- [[Zone Distillation Monster]] `vector, number → list`
+- [[Zone Distillation Non-Monster]] `vector, number → list`
+- [[Zone Distillation Item]] `vector, number → list`
+- [[Zone Distillation Non-Item]] `vector, number → list`
+- [[Zone Distillation Player]] `vector, number → list`
+- [[Zone Distillation Non-Player]] `vector, number → list`
+- [[Zone Distillation Living]] `vector, number → list`
+- [[Zone Distillation Non-Living]] `vector, number → list`
+- [[Zone Distillation Any]] `vector, number → list`
+- [[Integration Distillation]] `list, any → list`
+- [[Vacant Reflection]] `— → list`
+- [[Single's Purification]] `any → list`
+- [[Flock's Gambit]] `many, num → list`
+- [[Speaker's Distillation]] `list, any → list`
+- [[Contemplation]] `— → —`
+- [[Introspection]] `— → —`
+- [[Retrospection]] `— → —`
+- [[Evanition]] `— → —`
+- [[Consideration]] `— → —`
+- [[Interjection]] `— → —`
+- [[Meditation]] `num → —`
+- [[Recollection]] `— → num, list`
+- [[Scribe's Reflection]] `— → any`
+- [[Auditor's Reflection]] `— → bool`
+- [[Assessor's Reflection]] `— → bool`
+- [[Huginn's Gambit]] `any → —`
+- [[Muninn's Reflection]] `— → any`
+- [[Sine Purification]] `num → num`
+- [[Cosine Purification]] `num → num`
+- [[Tangent Purification]] `num → num`
+- [[Inverse Sine Purification]] `num → num`
+- [[Inverse Cosine Purification]] `num → num`
+- [[Inverse Tangent Purification]] `num → num`
+- [[Inverse Tangent Distillation]] `num, num → num`
+- [[Logarithmic Distillation]] `num, num → num`
+- [[Hermes' Gambit]] `evaluatable → many`
+- [[Iris' Gambit]] `evaluatable → many`
+- [[Thoth's Gambit]] `evaluatable, list → list`
+- [[Charon's Gambit]] `— → —`
+- [[Thanatos' Reflection]] `— → number`
+- [[Waystone Reflection]] `— → vector`
+- [[Lodestone Reflection]] `— → vector`
+- [[Lesser Fold Reflection]] `— → vector`
+- [[Greater Fold Reflection]] `— → vector`
+- [[Akasha's Distillation]] `vector, pattern → any`
+- [[Vector Reflection -X]] `— → —`
+- [[Vector Reflection -Y]] `— → —`
+- [[Vector Reflection -Z]] `— → —`
+- [[Vector Reflection +X]] `— → —`
+- [[Vector Reflection +Y]] `— → —`
+- [[Vector Reflection +Z]] `— → —`

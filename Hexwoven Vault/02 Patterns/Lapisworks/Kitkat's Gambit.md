@@ -1,0 +1,72 @@
+---
+aliases: ["Kitkat's Gambit"]
+tags: [hexcasting/pattern, mod/lapisworks, family/gambit, topic/control-flow]
+kind: "Pattern"
+family: "Gambit"
+topics: ["Control Flow & Meta-evaluation"]
+mod: "Lapisworks"
+op_id: "lapisworks:execute_many_times"
+signature: "dedadada"
+start_direction: "SOUTH_WEST"
+input: "num, [pattern]"
+output: ""
+cost: ""
+iotas_in: ["[[Number]]", "[[List]]", "[[Pattern]]"]
+iotas_out: []
+entry: "[[Enchanted Meta-eval]]"
+needs_enlightenment: false
+per_world: false
+kind_source: "code"
+topic_source: "page"
+in_book: true
+---
+
+# Kitkat's Gambit
+
+◇ **Pattern** · [[Lapisworks]] · 📖 [[Enchanted Meta-eval]] · Lapisworks
+
+**Topics:** [[Control Flow & Meta-evaluation (Topic)|Control Flow & Meta-evaluation]]
+
+**Unlock:** ✅ available from the start: just draw it
+
+> [!abstract] ♞ Gambit
+> This pattern **rearranges the stack** or **controls how the hex runs**: its name marks it as a **Gambit**. See [[Pattern Naming Guide]] · [[Patterns by Family#Gambit|all Gambit patterns]].
+
+## How to draw it
+
+<svg class="hexpat" xmlns="http://www.w3.org/2000/svg" width="170" height="109" viewBox="0 0 170.0 108.7"><g fill="#8c8c99" fill-opacity="0.35"><circle cx="6.9" cy="24.3" r="2"/><circle cx="41.6" cy="24.3" r="2"/><circle cx="76.3" cy="24.3" r="2"/><circle cx="111.0" cy="24.3" r="2"/><circle cx="145.7" cy="24.3" r="2"/><circle cx="24.3" cy="54.3" r="2"/><circle cx="59.0" cy="54.3" r="2"/><circle cx="93.7" cy="54.3" r="2"/><circle cx="128.4" cy="54.3" r="2"/><circle cx="163.1" cy="54.3" r="2"/><circle cx="6.9" cy="84.4" r="2"/><circle cx="41.6" cy="84.4" r="2"/><circle cx="76.3" cy="84.4" r="2"/><circle cx="111.0" cy="84.4" r="2"/><circle cx="145.7" cy="84.4" r="2"/></g><polyline class="hexpat-base" points="59.0,54.3 41.6,84.4 24.3,54.3 41.6,24.3 59.0,54.3 76.3,24.3 93.7,54.3 111.0,24.3 128.4,54.3 145.7,24.3" fill="none" stroke="#b38ef3" stroke-opacity="0.35" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><polyline class="hexpat-trace" style="--len:312;--dur:2.5s" points="59.0,54.3 41.6,84.4 24.3,54.3 41.6,24.3 59.0,54.3 76.3,24.3 93.7,54.3 111.0,24.3 128.4,54.3 145.7,24.3" fill="none" stroke="#b38ef3" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><line x1="59.0" y1="54.3" x2="53.4" y2="63.9" stroke="#fc77be" stroke-width="2.4" stroke-linecap="round"/><polygon points="49.4,70.9 50.1,62.0 56.7,65.9" fill="#fc77be"/><circle cx="59.0" cy="54.3" r="3.4" fill="#fc77be"/></svg>
+
+**Strokes** `dedadada` · **Start** `south-west` · *start at the pink dot, first stroke along the arrow; any rotation works*
+
+## Stack effect
+
+- **Takes:** `num, [pattern]` ([[Number]], [[List]], [[Pattern]])
+- **Leaves:** `nothing` (—)
+- **ID:** `lapisworks:execute_many_times`
+
+```text
+before   … │ num │ [pattern]  ◂ top
+after    …                    ◂ top
+```
+
+## Description
+
+*Do you know the definition of insanity?*
+
+Executes the given pattern list the specified number of times. The [[The Stack|stack]] on start behaves like it does for [[Thoth's Gambit]].
+
+## Related patterns (same book page)
+
+- [[Cubic Exaltation]] `[pattern], vec, vec, bool → [any]`
+- [[Spherical Exaltation]] `[pattern], vec, num → [any]`
+- [[Spherical Exaltation II]] `[pattern], vec, num → [any]`
+- [[Mintiest Gambit]] `num, num, [pattern] → [any]`
+- [[Erebus' Gambit]] `positive num → —`
+
+## Sources
+
+- 📖 **Guidebook:** [[Enchanted Meta-eval]] (same text as the in-game Hex Notebook)
+- 🧩 **Mod page:** [Lapisworks on Modrinth](https://modrinth.com/mod/YPwDELmO)
+- ✏️ **Strokes:** read from the mod code
+- 🏷️ **Type (Pattern):** from the mod code: its action class `OpForNInRange` is not a `SpellAction`
+- 🔧 **Pattern ID:** `lapisworks:execute_many_times`

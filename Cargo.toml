@@ -1,0 +1,16 @@
+[package]
+name = "hexpack"
+version = "0.1.0"
+edition = "2021"
+description = "Draw, check and compactly arrange Hex Casting patterns"
+license = "MIT"
+repository = "https://github.com/Jesplay/Hexpack"
+readme = "README.md"
+keywords = ["minecraft", "hexcasting", "packing", "egui"]
+categories = ["games", "visualization"]
+
+[dependencies]
+eframe = "0.29.1"
+
+[profile.release]
+opt-level = 3

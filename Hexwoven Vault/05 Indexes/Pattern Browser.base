@@ -1,0 +1,56 @@
+filters:
+  and:
+    - file.inFolder("02 Patterns")
+properties:
+  note.kind:
+    displayName: Kind
+  note.family:
+    displayName: Family
+  note.mod:
+    displayName: Mod
+  note.input:
+    displayName: Takes
+  note.output:
+    displayName: Leaves
+  note.cost:
+    displayName: Cost
+views:
+  - type: table
+    name: All patterns
+    order:
+      - file.name
+      - kind
+      - family
+      - mod
+      - input
+      - output
+  - type: table
+    name: Spells
+    filters:
+      and:
+        - kind == "Spell"
+    order:
+      - file.name
+      - mod
+      - input
+      - cost
+  - type: table
+    name: Great Spells
+    filters:
+      and:
+        - kind == "Great Spell"
+    order:
+      - file.name
+      - mod
+      - input
+      - cost
+  - type: table
+    name: Hex Casting only
+    filters:
+      and:
+        - mod == "Hex Casting"
+    order:
+      - file.name
+      - family
+      - input
+      - output

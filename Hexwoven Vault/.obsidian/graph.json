@@ -1,0 +1,79 @@
+{
+  "collapse-filter": false,
+  "search": "-path:\"00 Guides\" -path:\"03 Iotas\" -path:\"04 Mods\" -path:\"05 Indexes\" -path:\"🏠 Home\" -path:\"01 Book/Hex Casting/The Stack.md\" -path:\"01 Book/Getting Started/Media.md\" -path:\"01 Book/Items/Amethyst.md\" -path:\"01 Book/Hex Casting/Mishaps.md\" -path:\"01 Book/Items/Focus.md\" -path:\"01 Book/Items/Staves.md\" -path:\"01 Book/Items/Spellbook.md\" -path:\"01 Book/Items/Pigments.md\" -path:\"01 Book/The Great Work/Spell Circles.md\" -path:\"01 Book/The Great Work/Akashic Libraries.md\"",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#hexcasting/great-spell",
+      "color": {
+        "a": 1,
+        "rgb": 16761856
+      }
+    },
+    {
+      "query": "tag:#hexcasting/spell",
+      "color": {
+        "a": 1,
+        "rgb": 16723592
+      }
+    },
+    {
+      "query": "tag:#hexcasting/pattern",
+      "color": {
+        "a": 1,
+        "rgb": 7234949
+      }
+    },
+    {
+      "query": "tag:#hexbook/entry",
+      "color": {
+        "a": 1,
+        "rgb": 5210024
+      }
+    },
+    {
+      "query": "tag:#hexbook/category",
+      "color": {
+        "a": 1,
+        "rgb": 3065062
+      }
+    },
+    {
+      "query": "tag:#hexcasting/iota",
+      "color": {
+        "a": 1,
+        "rgb": 6280077
+      }
+    },
+    {
+      "query": "tag:#hexcasting/mod",
+      "color": {
+        "a": 1,
+        "rgb": 15965258
+      }
+    },
+    {
+      "query": "tag:#moc",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1.1,
+  "lineSizeMultiplier": 0.6,
+  "collapse-forces": true,
+  "centerStrength": 0.35,
+  "repelStrength": 14,
+  "linkStrength": 1,
+  "linkDistance": 40,
+  "scale": 0.04938271604938271,
+  "close": true
+}

@@ -1,0 +1,47 @@
+---
+aliases: ["Great Wisp Spells"]
+tags: [hexbook/entry, mod/hexal, category/great-spells, topic/wisps]
+mod: "Hexal"
+category: "Great Spells"
+entry_id: "hexcasting:patterns/great_spells/great_wisps"
+---
+
+# Great Wisp Spells
+
+> **Category:** Patterns › [[Great Spells (Category)|Great Spells]]  
+> **Source mod:** [[Hexal]]
+
+## [[Consume Wisp|Consume Wisp]] ⭐ *Great Spell*
+
+<svg class="hexpat small" xmlns="http://www.w3.org/2000/svg" width="90" height="38" viewBox="0 0 90.0 38.4"><g fill="#8c8c99" fill-opacity="0.35"><circle cx="5.5" cy="5.5" r="1.6"/><circle cx="13.4" cy="5.5" r="1.6"/><circle cx="21.3" cy="5.5" r="1.6"/><circle cx="29.2" cy="5.5" r="1.6"/><circle cx="37.1" cy="5.5" r="1.6"/><circle cx="45.0" cy="5.5" r="1.6"/><circle cx="52.9" cy="5.5" r="1.6"/><circle cx="60.8" cy="5.5" r="1.6"/><circle cx="68.7" cy="5.5" r="1.6"/><circle cx="76.6" cy="5.5" r="1.6"/><circle cx="84.5" cy="5.5" r="1.6"/><circle cx="1.6" cy="12.4" r="1.6"/><circle cx="9.5" cy="12.4" r="1.6"/><circle cx="17.4" cy="12.4" r="1.6"/><circle cx="25.3" cy="12.4" r="1.6"/><circle cx="33.2" cy="12.4" r="1.6"/><circle cx="41.1" cy="12.4" r="1.6"/><circle cx="48.9" cy="12.4" r="1.6"/><circle cx="56.8" cy="12.4" r="1.6"/><circle cx="64.7" cy="12.4" r="1.6"/><circle cx="72.6" cy="12.4" r="1.6"/><circle cx="80.5" cy="12.4" r="1.6"/><circle cx="88.4" cy="12.4" r="1.6"/><circle cx="5.5" cy="19.2" r="1.6"/><circle cx="13.4" cy="19.2" r="1.6"/><circle cx="21.3" cy="19.2" r="1.6"/><circle cx="29.2" cy="19.2" r="1.6"/><circle cx="37.1" cy="19.2" r="1.6"/><circle cx="45.0" cy="19.2" r="1.6"/><circle cx="52.9" cy="19.2" r="1.6"/><circle cx="60.8" cy="19.2" r="1.6"/><circle cx="68.7" cy="19.2" r="1.6"/><circle cx="76.6" cy="19.2" r="1.6"/><circle cx="84.5" cy="19.2" r="1.6"/><circle cx="1.6" cy="26.0" r="1.6"/><circle cx="9.5" cy="26.0" r="1.6"/><circle cx="17.4" cy="26.0" r="1.6"/><circle cx="25.3" cy="26.0" r="1.6"/><circle cx="33.2" cy="26.0" r="1.6"/><circle cx="41.1" cy="26.0" r="1.6"/><circle cx="48.9" cy="26.0" r="1.6"/><circle cx="56.8" cy="26.0" r="1.6"/><circle cx="64.7" cy="26.0" r="1.6"/><circle cx="72.6" cy="26.0" r="1.6"/><circle cx="80.5" cy="26.0" r="1.6"/><circle cx="88.4" cy="26.0" r="1.6"/><circle cx="5.5" cy="32.9" r="1.6"/><circle cx="13.4" cy="32.9" r="1.6"/><circle cx="21.3" cy="32.9" r="1.6"/><circle cx="29.2" cy="32.9" r="1.6"/><circle cx="37.1" cy="32.9" r="1.6"/><circle cx="45.0" cy="32.9" r="1.6"/><circle cx="52.9" cy="32.9" r="1.6"/><circle cx="60.8" cy="32.9" r="1.6"/><circle cx="68.7" cy="32.9" r="1.6"/><circle cx="76.6" cy="32.9" r="1.6"/><circle cx="84.5" cy="32.9" r="1.6"/></g><polyline class="hexpat-base" points="21.3,19.2 17.4,12.4 13.4,5.5 9.5,12.4 5.5,19.2 9.5,26.0 13.4,32.9 17.4,26.0 21.3,19.2 25.3,12.4 29.2,5.5 37.1,5.5 45.0,5.5 52.9,5.5 60.8,5.5 64.7,12.4 68.7,19.2 72.6,26.0 76.6,32.9 80.5,26.0 84.5,19.2 80.5,12.4 76.6,5.5 72.6,12.4 68.7,19.2 64.7,26.0 60.8,32.9 52.9,32.9 45.0,32.9 37.1,32.9 29.2,32.9 25.3,26.0 21.3,19.2 29.2,19.2 33.2,26.0 37.1,19.2 41.1,12.4 48.9,12.4 52.9,19.2 56.8,26.0 60.8,19.2 56.8,12.4 52.9,19.2 48.9,26.0 41.1,26.0 37.1,19.2 33.2,12.4 29.2,19.2 37.1,19.2 45.0,19.2 52.9,19.2 60.8,19.2 68.7,19.2" fill="none" stroke="#b38ef3" stroke-opacity="0.35" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><polyline class="hexpat-trace" style="--len:411;--dur:6.0s" points="21.3,19.2 17.4,12.4 13.4,5.5 9.5,12.4 5.5,19.2 9.5,26.0 13.4,32.9 17.4,26.0 21.3,19.2 25.3,12.4 29.2,5.5 37.1,5.5 45.0,5.5 52.9,5.5 60.8,5.5 64.7,12.4 68.7,19.2 72.6,26.0 76.6,32.9 80.5,26.0 84.5,19.2 80.5,12.4 76.6,5.5 72.6,12.4 68.7,19.2 64.7,26.0 60.8,32.9 52.9,32.9 45.0,32.9 37.1,32.9 29.2,32.9 25.3,26.0 21.3,19.2 29.2,19.2 33.2,26.0 37.1,19.2 41.1,12.4 48.9,12.4 52.9,19.2 56.8,26.0 60.8,19.2 56.8,12.4 52.9,19.2 48.9,26.0 41.1,26.0 37.1,19.2 33.2,12.4 29.2,19.2 37.1,19.2 45.0,19.2 52.9,19.2 60.8,19.2 68.7,19.2" fill="none" stroke="#b38ef3" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><line x1="21.3" y1="19.2" x2="20.1" y2="17.0" stroke="#fc77be" stroke-width="1.9" stroke-linecap="round"/><polygon points="19.1,15.4 20.8,16.6 19.3,17.4" fill="#fc77be"/><circle cx="21.3" cy="19.2" r="2.6" fill="#fc77be"/></svg>
+
+`entity` → `—`
+
+Remove a wisp from the [[The Stack|stack]], and disassemble the wisp. The patterns contained are lost, but the [[Media|media]] that it contained can be repurposed if this spell is cast by another wisp.
+
+Costs either an [[Amethyst|Amethyst Shard]] if the wisp is owned by you or has [[Allow Transfer|allowed]] transfer with the caster or caster's owner, or half again as much media as the consumed wisp contains if the wisp is owned by another and has now allowed it. Repurposing the media is not completely efficient, losing one twentieth of the consumed wisp's reserve in transfer.
+
+## [[Bind Wisp|Bind Wisp]] ⭐ *Great Spell*
+
+<svg class="hexpat small" xmlns="http://www.w3.org/2000/svg" width="90" height="44" viewBox="0 0 90.0 44.0"><g fill="#8c8c99" fill-opacity="0.35"><circle cx="9.8" cy="9.8" r="1.6"/><circle cx="23.9" cy="9.8" r="1.6"/><circle cx="38.0" cy="9.8" r="1.6"/><circle cx="52.0" cy="9.8" r="1.6"/><circle cx="66.1" cy="9.8" r="1.6"/><circle cx="80.2" cy="9.8" r="1.6"/><circle cx="2.8" cy="22.0" r="1.6"/><circle cx="16.9" cy="22.0" r="1.6"/><circle cx="30.9" cy="22.0" r="1.6"/><circle cx="45.0" cy="22.0" r="1.6"/><circle cx="59.1" cy="22.0" r="1.6"/><circle cx="73.1" cy="22.0" r="1.6"/><circle cx="87.2" cy="22.0" r="1.6"/><circle cx="9.8" cy="34.2" r="1.6"/><circle cx="23.9" cy="34.2" r="1.6"/><circle cx="38.0" cy="34.2" r="1.6"/><circle cx="52.0" cy="34.2" r="1.6"/><circle cx="66.1" cy="34.2" r="1.6"/><circle cx="80.2" cy="34.2" r="1.6"/></g><polyline class="hexpat-base" points="16.9,22.0 9.8,34.2 23.9,34.2 30.9,22.0 38.0,9.8 52.0,9.8 59.1,22.0 66.1,34.2 80.2,34.2 73.1,22.0 80.2,9.8 66.1,9.8 59.1,22.0 52.0,34.2 38.0,34.2 30.9,22.0 23.9,9.8 9.8,9.8 16.9,22.0 30.9,22.0 45.0,22.0 59.1,22.0 73.1,22.0" fill="none" stroke="#b38ef3" stroke-opacity="0.35" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><polyline class="hexpat-trace" style="--len:309;--dur:6.0s" points="16.9,22.0 9.8,34.2 23.9,34.2 30.9,22.0 38.0,9.8 52.0,9.8 59.1,22.0 66.1,34.2 80.2,34.2 73.1,22.0 80.2,9.8 66.1,9.8 59.1,22.0 52.0,34.2 38.0,34.2 30.9,22.0 23.9,9.8 9.8,9.8 16.9,22.0 30.9,22.0 45.0,22.0 59.1,22.0 73.1,22.0" fill="none" stroke="#b38ef3" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><line x1="16.9" y1="22.0" x2="14.6" y2="25.9" stroke="#fc77be" stroke-width="1.9" stroke-linecap="round"/><polygon points="13.0,28.7 13.3,25.1 16.0,26.7" fill="#fc77be"/><circle cx="16.9" cy="22.0" r="2.6" fill="#fc77be"/></svg>
+
+`entity` → `—`
+
+Bind one of my wisps closer to me; I may only have one bound wisp at a time, but whichever wisp is bound costs significantly less upkeep and increased range.
+
+## [[Familiar's Reflection|Familiar's Reflection]]
+
+<svg class="hexpat small" xmlns="http://www.w3.org/2000/svg" width="90" height="38" viewBox="0 0 90.0 38.1"><g fill="#8c8c99" fill-opacity="0.35"><circle cx="2.4" cy="8.5" r="1.6"/><circle cx="14.6" cy="8.5" r="1.6"/><circle cx="26.8" cy="8.5" r="1.6"/><circle cx="38.9" cy="8.5" r="1.6"/><circle cx="51.1" cy="8.5" r="1.6"/><circle cx="63.2" cy="8.5" r="1.6"/><circle cx="75.4" cy="8.5" r="1.6"/><circle cx="87.6" cy="8.5" r="1.6"/><circle cx="8.5" cy="19.0" r="1.6"/><circle cx="20.7" cy="19.0" r="1.6"/><circle cx="32.8" cy="19.0" r="1.6"/><circle cx="45.0" cy="19.0" r="1.6"/><circle cx="57.2" cy="19.0" r="1.6"/><circle cx="69.3" cy="19.0" r="1.6"/><circle cx="81.5" cy="19.0" r="1.6"/><circle cx="2.4" cy="29.6" r="1.6"/><circle cx="14.6" cy="29.6" r="1.6"/><circle cx="26.8" cy="29.6" r="1.6"/><circle cx="38.9" cy="29.6" r="1.6"/><circle cx="51.1" cy="29.6" r="1.6"/><circle cx="63.2" cy="29.6" r="1.6"/><circle cx="75.4" cy="29.6" r="1.6"/><circle cx="87.6" cy="29.6" r="1.6"/></g><polyline class="hexpat-base" points="8.5,19.0 20.7,19.0 14.6,29.6 26.8,29.6 32.8,19.0 38.9,8.5 51.1,8.5 57.2,19.0 63.2,29.6 75.4,29.6 69.3,19.0 75.4,8.5 63.2,8.5 57.2,19.0 51.1,29.6 38.9,29.6 32.8,19.0 26.8,8.5 14.6,8.5 20.7,19.0 32.8,19.0 45.0,19.0 57.2,19.0 69.3,19.0 81.5,19.0" fill="none" stroke="#b38ef3" stroke-opacity="0.35" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><polyline class="hexpat-trace" style="--len:292;--dur:6.0s" points="8.5,19.0 20.7,19.0 14.6,29.6 26.8,29.6 32.8,19.0 38.9,8.5 51.1,8.5 57.2,19.0 63.2,29.6 75.4,29.6 69.3,19.0 75.4,8.5 63.2,8.5 57.2,19.0 51.1,29.6 38.9,29.6 32.8,19.0 26.8,8.5 14.6,8.5 20.7,19.0 32.8,19.0 45.0,19.0 57.2,19.0 69.3,19.0 81.5,19.0" fill="none" stroke="#b38ef3" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><line x1="8.5" y1="19.0" x2="12.4" y2="19.0" stroke="#fc77be" stroke-width="1.9" stroke-linecap="round"/><polygon points="15.2,19.0 12.4,20.4 12.4,17.7" fill="#fc77be"/><circle cx="8.5" cy="19.0" r="2.6" fill="#fc77be"/></svg>
+
+`—` → `entity | null`
+
+Returns my currently bound wisp. A new wisp can only be bound when this returns null. (This is not a great spell, I have simply placed it here for convenience.)
+
+---
+### Patterns on this page
+
+- [[Consume Wisp]] · Great Spell · Great Spell
+- [[Bind Wisp]] · Great Spell · Great Spell
+- [[Familiar's Reflection]] · Pattern · Reflection
+
+**Sources:** 🌐 [Official online docs](https://hexal.hexxy.media/v/0.3.1/1.0/en_us/#patterns/great_spells/great_wisps) · 🧩 [Hexal on Modrinth](https://modrinth.com/mod/aBVJ6Q36)

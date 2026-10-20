@@ -88,6 +88,8 @@ pub struct App {
     menu_target: Option<usize>,
     /// short message at the bottom (text, time)
     toast: Option<(String, f64)>,
+    /// text to put on the clipboard in the next frame
+    copy_pending: Option<String>,
 }
 
 pub fn run(vault: PathBuf, preload: Option<String>) -> Result<(), String> {
@@ -277,6 +279,7 @@ impl App {
             search_cache: (String::new(), Vec::new()),
             menu_target: None,
             toast: None,
+            copy_pending: None,
         };
         app.load_db();
         app.vault_open = app.db.is_none();
@@ -1086,6 +1089,9 @@ impl eframe::App for App {
         if self.search_open && !self.search.trim().is_empty() {
             self.search_popup(ctx);
         }
+        if let Some(text) = self.copy_pending.take() {
+            ctx.copy_text(text);
+        }
         self.show_toast(ctx);
         if self.help_open {
             let mut open = true;
@@ -1145,6 +1151,63 @@ fn open_external(url: &str) -> std::io::Result<()> {
     #[cfg(not(target_os = "macos"))]
     let mut cmd = Command::new("xdg-open");
     cmd.arg(url).stdin(Stdio::null()).stdout(Stdio::null()).stderr(Stdio::null()).spawn().map(|_| ())
+}
+
+/// Normalised absolute path, for comparing folders.
+fn canon(p: &std::path::Path) -> PathBuf {
+    let c = std::fs::canonicalize(p).unwrap_or_else(|_| p.to_path_buf());
+    if cfg!(windows) {
+        PathBuf::from(c.to_string_lossy().to_lowercase())
+    } else {
+        c
+    }
+}
+
+/// Vault folders registered in Obsidian, read from its `obsidian.json`.
+/// `None` if no Obsidian config was found (then we just try to open the link).
+fn obsidian_vaults() -> Option<Vec<PathBuf>> {
+    let home = std::env::var("HOME").or_else(|_| std::env::var("USERPROFILE")).unwrap_or_default();
+    let home = PathBuf::from(home);
+    let mut configs = Vec::new();
+    if let Ok(appdata) = std::env::var("APPDATA") {
+        configs.push(PathBuf::from(appdata).join("obsidian"));
+    }
+    if let Ok(xdg) = std::env::var("XDG_CONFIG_HOME") {
+        configs.push(PathBuf::from(xdg).join("obsidian"));
+    }
+    configs.push(home.join(".config/obsidian"));
+    configs.push(home.join(".var/app/md.obsidian.Obsidian/config/obsidian"));
+    configs.push(home.join("snap/obsidian/current/.config/obsidian"));
+    configs.push(home.join("Library/Application Support/obsidian"));
+    let text = configs.iter().find_map(|d| std::fs::read_to_string(d.join("obsidian.json")).ok())?;
+    // tiny reader for the "path":"..." strings, no JSON library needed
+    let mut out = Vec::new();
+    let mut rest = text.as_str();
+    while let Some(i) = rest.find("\"path\"") {
+        rest = &rest[i + 6..];
+        let Some(q) = rest.find('"') else { break };
+        rest = &rest[q + 1..];
+        let mut s = String::new();
+        let mut end = rest.len();
+        let mut chars = rest.char_indices();
+        while let Some((k, c)) = chars.next() {
+            match c {
+                '\\' => {
+                    if let Some((_, n)) = chars.next() {
+                        s.push(n);
+                    }
+                }
+                '"' => {
+                    end = k;
+                    break;
+                }
+                c => s.push(c),
+            }
+        }
+        rest = &rest[end..];
+        out.push(canon(std::path::Path::new(&s)));
+    }
+    Some(out)
 }
 
 /// Small glyph preview for the search results.
@@ -1211,6 +1274,18 @@ impl App {
         let Some(db) = &self.db else { return };
         let e = &db.entries[entry];
         let (name, url) = (e.name.clone(), obsidian_url(&e.file));
+        // Obsidian only opens files of vaults it knows; otherwise it shows "Vault not found"
+        if let Some(known) = obsidian_vaults() {
+            let file = canon(&e.file);
+            if !known.iter().any(|v| file.starts_with(v)) {
+                self.copy_pending = Some(self.vault.clone());
+                self.toast = Some((
+                    "Obsidian doesn't know this vault yet. In Obsidian: Open folder as vault, then paste the path (copied).".into(),
+                    f64::NAN,
+                ));
+                return;
+            }
+        }
         let msg = match open_external(&url) {
             Ok(()) => format!("Opening \"{name}\" in Obsidian"),
             Err(err) => format!("Could not open Obsidian: {err}"),
@@ -1357,7 +1432,8 @@ impl App {
         if t0.is_nan() {
             *t0 = now;
         }
-        if now - *t0 > 2.6 {
+        // longer messages stay a little longer
+        if now - *t0 > 2.6 + msg.len() as f64 / 30.0 {
             self.toast = None;
             return;
         }
